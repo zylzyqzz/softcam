@@ -2,7 +2,7 @@
 
 pushd %~dp0
 set INSTALLER=Win32\Release\softcam_installer.exe
-set TARGET=..\..\dist\bin\Win32\softcam.dll
+set TARGET=..\..\dist\bin\Win32\LuBotCam.dll
 
 echo ################################################################
 echo Softcam Installer (softcam_installer.exe) will uninstall Softcam

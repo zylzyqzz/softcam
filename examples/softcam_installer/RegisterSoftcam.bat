@@ -2,7 +2,7 @@
 
 pushd %~dp0
 set INSTALLER=x64\Release\softcam_installer.exe
-set TARGET=..\..\dist\bin\x64\softcam.dll
+set TARGET=..\..\dist\bin\x64\LuBotCam.dll
 
 echo ##############################################################
 echo Softcam Installer (softcam_installer.exe) will install Softcam

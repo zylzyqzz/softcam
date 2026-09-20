@@ -7,16 +7,17 @@
 #include <softcamcore/SenderAPI.h>
 
 
-// {AEF3B972-5FA5-4647-9571-358EB472BC9E}
+// {10744229-707C-44C7-8826-B073CD4E0D06}
+// LuBot 自有 CLSID，与上游 tshino/softcam 隔离，避免同机共存冲突
 DEFINE_GUID(CLSID_DShowSoftcam,
-0xaef3b972, 0x5fa5, 0x4647, 0x95, 0x71, 0x35, 0x8e, 0xb4, 0x72, 0xbc, 0x9e);
+0x10744229, 0x707c, 0x44c7, 0x88, 0x26, 0xb0, 0x73, 0xcd, 0x4e, 0x0d, 0x06);
 
 
 namespace {
 
 // Setup data
 
-const wchar_t FILTER_NAME[] = L"DirectShow Softcam";
+const wchar_t FILTER_NAME[] = L"TK Cam";
 const GUID &FILTER_CLASSID = CLSID_DShowSoftcam;
 
 const AMOVIESETUP_MEDIATYPE s_pin_types[] =

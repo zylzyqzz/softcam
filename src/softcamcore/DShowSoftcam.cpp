@@ -164,7 +164,7 @@ CUnknown * Softcam::CreateInstance(
 }
 
 Softcam::Softcam(LPUNKNOWN lpunk, const GUID& clsid, HRESULT *phr) :
-    CSource(NAME("DirectShow Softcam"), lpunk, clsid),
+    CSource(NAME("TK Cam"), lpunk, clsid),
     m_frame_buffer(FrameBuffer::open()),
     m_valid(m_frame_buffer ? true : false),
     m_width(m_frame_buffer.width()),
@@ -368,7 +368,7 @@ Softcam::releaseFrameBuffer()
 SoftcamStream::SoftcamStream(HRESULT *phr,
                          Softcam *pParent,
                          LPCWSTR pPinName) :
-    CSourceStream(NAME("DirectShow Softcam Stream"), phr, pParent, pPinName),
+    CSourceStream(NAME("TK Cam Stream"), phr, pParent, pPinName),
     m_valid(pParent->valid()),
     m_width(pParent->width()),
     m_height(pParent->height())
